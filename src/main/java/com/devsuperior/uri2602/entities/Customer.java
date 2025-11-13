@@ -7,9 +7,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "customers")
 public class Customer {
-
-    /**Veja que só tem o @Id proque no projeto não fala nda sobre o id ser autoincrementado. Se o projeto pedisse que fosse autoincrementado teriamos que colocar
-    abaixo também @GeneratedValue(strategy = GenerationType.IDENTITY) **/
 	@Id
 	private Long id;
 	private String name;
